@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 14px;
     font-family: "Lato", sans-serif;
 }
@@ -78,7 +78,6 @@ section h1 {
 
 section ul li, section ol li {
     font-size: 1em;
-    margin-left: -10px;
     line-height: 1.8;
 }
 
@@ -123,37 +122,35 @@ section ul li, section ol li {
     margin-right: auto;
 }
 
-@media screen and (min-width: 40em) {
-    .grid-1 {
-        width: 16.6666666%;
-    }
-
-    .grid-2 {
-        width: 33.333333%;
-    }
-
-    .grid-3 {
-        width: 50%;
-    }
-
-    .grid-4 {
-        width: 66.6666666%;
-    }
-
-    .grid-5 {
-        width: 83.3333333%;
-    }
-
-    .grid-6 {
-        width: 100%;
-    }
-
+.grid-1 {
+    width: 16.6666666%;
 }
 
-.about{
+.grid-2 {
+    width: 33.333333%;
+}
+
+.grid-3 {
+    width: 50%;
+}
+
+.grid-4 {
+    width: 66.6666666%;
+}
+
+.grid-5 {
+    width: 83.3333333%;
+}
+
+.grid-6 {
+    width: 100%;
+}
+
+.about {
     width: 95%;
     margin: auto auto;
 }
+
 .right p {
     font-size: 1rem;
     font-weight: normal;
@@ -230,7 +227,8 @@ section ul li, section ol li {
     width: 65%;
     font-size: 1rem;
 }
-.spot-data ul{
+
+.spot-data ul {
     font-size: 1rem;
     display: block;
     text-align: left;
@@ -238,9 +236,10 @@ section ul li, section ol li {
     width: 10rem;
     left: 50%;
 }
+
 .spot-pic img {
     width: 100%;
-    max-width: 15rem;
+    max-width: 12rem;
 }
 
 .spotlight p {
@@ -295,10 +294,11 @@ section ul li, section ol li {
 }
 
 .education,
-.experience{
+.experience {
     width: 90%;
     margin: 0 auto;
 }
+
 .education {
     font-family: "Lato", sans-serif;
     line-height: 1.5;
@@ -306,7 +306,7 @@ section ul li, section ol li {
     margin: 0 auto;
 }
 
-.experience{
+.experience {
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
@@ -318,26 +318,42 @@ section ul li, section ol li {
 .experience h2, .experience p {
     text-align: center;
 }
-.grid-4 ul{
+
+ul {
     margin: 0;
 }
 
-.experience [class*="row"]:last-of-type {
-    border: none;
+.skills h1{
+    text-align: center;
+}
+.list{
+    padding: 1rem;
+}
+.list p{
+    display:inline-block;
+    margin: .2rem;
+    padding: .3rem;
+    background-color: #f3e2d8;
+    border-radius: 3px;
 }
 
+.conclusion{
+    float: left;
+}
 
-@media screen and (min-width:  30rem) {
+@media screen and (min-width: 30rem) {
     html {
         font-size: 16px;
     }
 }
+
 @media screen and (min-width: 45rem) {
     html {
         font-size: 18px;
     }
 }
-@media screen and (min-width: 50rem) {
+
+@media screen and (min-width: 60rem) {
     html {
         font-size: 20px;
     }
