@@ -414,8 +414,17 @@ section ul li, section ol li {
     object-fit: contain;
 }
 
-.leaseweb-logo {
-    width: 8rem;
+.leaseweb-card {
+    justify-content: center;
+    min-width: 13rem;
+    min-height: 4.5rem;
+    padding: .8rem 1rem;
+}
+
+.company-card .leaseweb-logo {
+    flex: 0 1 11rem;
+    width: 11rem;
+    max-width: 100%;
     height: auto;
 }
 
@@ -478,18 +487,23 @@ section ul li, section ol li {
     height: auto;
 }
 
-.excelian-brand {
+.luxoft-brand {
     display: block;
     width: 10rem;
     max-width: 100%;
     padding-top: .5rem;
     border-top: 1px solid #e8ebef;
+    color: #0e1020;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
-.excelian-brand img {
-    display: block;
-    width: 100%;
-    height: auto;
+.luxoft-brand:hover,
+.luxoft-brand:focus-visible {
+    color: #3d6dbe;
 }
 
 .company-card:hover,
