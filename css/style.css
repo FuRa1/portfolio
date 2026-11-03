@@ -487,23 +487,18 @@ section ul li, section ol li {
     height: auto;
 }
 
-.luxoft-brand {
+.excelian-brand {
     display: block;
     width: 10rem;
     max-width: 100%;
     padding-top: .5rem;
     border-top: 1px solid #e8ebef;
-    color: #0e1020;
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: .12em;
-    line-height: 1.2;
-    text-transform: uppercase;
 }
 
-.luxoft-brand:hover,
-.luxoft-brand:focus-visible {
-    color: #3d6dbe;
+.excelian-brand img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .company-card:hover,
