@@ -31,17 +31,18 @@ $(function () {
         });
     }
 
-    var flag = true;
+    var showAlternatePhotos = false;
 
     $(".gallery-toggle").on("click", function () {
-        flag = !flag;
+        showAlternatePhotos = !showAlternatePhotos;
+        var buttonText = showAlternatePhotos ? "Show original photos" : "Show alternate photos";
+        $(this).text(buttonText).attr("aria-label", buttonText);
         $(".grow-rotate").each(function (key, value) {
-            $(value).fadeOut(function () {
+            $(value).stop(true, true).fadeOut(200, function () {
                 galleryModule();
-                $(value).attr("src", "img/pic" + Number(flag) + key + ".jpg");
+                $(value).attr("src", "img/pic" + (showAlternatePhotos ? 0 : 1) + key + ".jpg").fadeIn(300);
             });
-            $(value).fadeIn(1000);
-        })
-    })
+        });
+    });
 
 });

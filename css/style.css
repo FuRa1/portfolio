@@ -177,21 +177,28 @@ section ul li, section ol li {
 .gallery-toggle {
     display: block;
     margin: 0 0 1rem auto;
-    padding: .2rem .55rem;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
+    padding: .55rem .9rem;
+    border: 1px solid #dfe4ea;
+    border-radius: 999px;
     background: #fff;
-    color: #555;
+    color: #3d6dbe;
     font: inherit;
-    font-size: 1.5rem;
-    line-height: 1;
+    font-size: .9rem;
+    line-height: 1.2;
     cursor: pointer;
+    transition: background-color .15s ease, color .15s ease, border-color .15s ease;
 }
 
 .gallery-toggle:hover,
 .gallery-toggle:focus-visible {
     border-color: #3d6dbe;
-    color: #3d6dbe;
+    background: #3d6dbe;
+    color: #fff;
+}
+
+.gallery-toggle:focus-visible {
+    outline: 2px solid #3d6dbe;
+    outline-offset: 3px;
 }
 
 .galleryRow {
@@ -405,6 +412,11 @@ section ul li, section ol li {
     width: 2.5rem;
     height: 2.5rem;
     object-fit: contain;
+}
+
+.leaseweb-logo {
+    width: 8rem;
+    height: auto;
 }
 
 .ihs-symbol {
