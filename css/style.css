@@ -169,24 +169,29 @@ section ul li, section ol li {
     box-shadow: 0 0 3px 2px #000;
 }
 
-.gallery h1:hover {
-    cursor: pointer;
-    text-shadow: 1px 1px 5px #888, -1px -1px 5px #888, 1px -1px 5px #888, -1px 1px 5px #888;
-}
-
 .galleryContent {
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
-.gallery-heading {
-    margin: 0 0 1.25rem;
-    padding-bottom: .65rem;
-    border-bottom: 1px solid #e5e5e5;
+.gallery-toggle {
+    display: block;
+    margin: 0 0 1rem auto;
+    padding: .2rem .55rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    background: #fff;
+    color: #555;
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
-#galleryHead {
-    margin: 0;
+.gallery-toggle:hover,
+.gallery-toggle:focus-visible {
+    border-color: #3d6dbe;
+    color: #3d6dbe;
 }
 
 .galleryRow {
@@ -330,6 +335,12 @@ section ul li, section ol li {
     margin: 0 0 .4rem;
 }
 
+.employer-name a {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+}
+
 .experience h2,
 .experience p {
     text-align: left;
@@ -363,6 +374,7 @@ section ul li, section ol li {
 .company-card {
     display: inline-flex;
     align-items: center;
+    gap: .5rem;
     min-height: 2.5rem;
     padding: .4rem .8rem;
     border: 1px solid #e3e3e3;
@@ -371,6 +383,18 @@ section ul li, section ol li {
     color: #444;
     font-weight: 700;
     box-shadow: 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.company-logo {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+.company-wordmark {
+    width: 6rem;
+    height: 1.5rem;
 }
 
 .company-card:hover,
@@ -386,24 +410,6 @@ section ul li, section ol li {
 
 ul {
     margin: 0;
-}
-
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-}
-
-.list p {
-    display: inline-block;
-    margin: 0;
-    padding: .5rem .75rem;
-    background-color: #f3e2d8;
-    border-radius: 3px;
-}
-
-.skills-section {
-    padding: 1rem 0;
 }
 
 @media screen and (min-width: 30rem) {

@@ -33,7 +33,7 @@ $(function () {
 
     var flag = true;
 
-    $("#galleryHead").on("click", function () {
+    $(".gallery-toggle").on("click", function () {
         flag = !flag;
         $(".grow-rotate").each(function (key, value) {
             $(value).fadeOut(function () {
