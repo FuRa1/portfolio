@@ -9,7 +9,7 @@ $(function () {
                 updateSlideIt(true);
             }).each(function () {
                 if (this.complete) {
-                    $(this).load();
+                    $(this).trigger("load");
                 }
             });
 
